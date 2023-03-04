@@ -40,6 +40,29 @@ body {
     top: 0px; */
 }
 
+.main-header-hypertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+    width: 328px;
+    height: 35px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.main-header-hypertext a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.main-header-hypertext a:hover {
+    border-top: solid #0065FC;
+    color: #0065FC;
+}
+
 .logo-site {
     width: 61.09px;
     height: 19px;
@@ -49,12 +72,21 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     justify-content: flex-start;
     /* background-color: #fc0000; */
     /* border: solid black; */
     height: 49px;
     width: auto;
+    margin-top: 35px;
 
+}
+
+.barre-filtre-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .bdr-icon {
@@ -108,6 +140,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
+    margin-top: 35px;
 }
 
 .bfbutton {
@@ -144,6 +177,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    margin-top: 37.5px;
 }
 
 .info-bulle {
@@ -204,6 +238,7 @@ body {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 37.5px;
 }
 
 .hebergements-and-populaires section {
@@ -216,6 +251,7 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
 }
 
 .hebergements-hcards {
@@ -223,6 +259,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 30px;
 }
 
 .hebergements-hcards .hcard {
@@ -238,7 +275,12 @@ body {
     border-top-right-radius: 20px;
 }
 
-.hebergements a {
+.hebergements-hcards a {
+    text-decoration: none;
+    color: black;
+}
+
+.afficher-plus a {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 17px;
@@ -250,6 +292,9 @@ body {
 .afficher-plus {
     margin-top: 45px;
 }
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -297,7 +342,20 @@ body {
     margin-bottom: 5px;
 }
 
+.populaires-cards a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
 /* Activites */
+
+.activites {
+    margin-top: 65px;
+}
 
 .activites-acards {
     display: flex;
@@ -308,6 +366,7 @@ body {
 }
 
 .acard {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -322,6 +381,14 @@ body {
 
 }
 
+.activites-acards a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 /* Footer */
 
 .site-foot {
@@ -330,6 +397,7 @@ body {
     justify-content: space-between;
     align-content: flex-start;
     gap: 100px;
+    margin-top: 65px;
 }
 
 .foot-column {
