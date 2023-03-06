@@ -32,6 +32,7 @@ body {
     align-items: flex-start;
     padding: 15px;
     gap: 30px;
+    height: 100%;
 
     /* position: absolute;
     height: 1828.52px;
@@ -58,7 +59,12 @@ body {
     color: black;
 }
 
-.main-header-hypertext a:hover {
+.main-header-hypertext div {
+    /* padding-top: 15px; */
+    padding: 15px;
+}
+
+.main-header-hypertext div:hover {
     border-top: solid #0065FC;
     color: #0065FC;
 }
@@ -135,11 +141,24 @@ body {
     color: white;
 }
 
+.bdr-button .fa-solid {
+    
+    color: white;
+    fill: white;
+    display: none;
+}
+
+/* .break {
+    flex-basis: 100%;
+    height: 0;
+    display: none;
+  } */
+
 .barre-filtre {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    /* gap: 40px; */
     margin-top: 35px;
 }
 
@@ -204,6 +223,11 @@ body {
 
 .hcard img {
     object-fit: cover;
+}
+
+.hcard-content {
+
+
 }
 
 .hcard-title {
@@ -282,6 +306,19 @@ body {
 .hebergements-hcards a {
     text-decoration: none;
     color: black;
+}
+
+.hebergements-cards .hcard-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 .afficher-plus a {
@@ -428,12 +465,45 @@ body {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .main-container {
+        width: 100%;
+        max-width: 1024px;
+        padding: 0 0px;
+        box-sizing: border-box;
+    }
+
+    .barre-filtre {
+        
+    }
+
+    .bfbutton {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-hcards a {
+        width: 30%;
+        height: 30%;
+    }
+
+    .hcard {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hcard img {
+        
+        width: 100%;
+        /* height: 100%; */
     }
 
     .populaires {
@@ -447,9 +517,19 @@ body {
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cards a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 30%;
     }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
 
     .populaires-cards .card-title {
         font-size: 14px;
@@ -458,9 +538,133 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-acards {
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+     
+    }
+
+    .activites-acards a {
+        width: 30%;
+        height: 30%;
+        
+    }
+
+    .acard img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+      }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .main-container {
+        width: 100%;
+        max-width: 767.98px;
+        padding: 0 0px;
+        box-sizing: border-box;
+    }
+
+    .bdr-button a {
+        display: none;
+    }
+
+    .bdr-button {
+        width: 49px;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .bdr-button .fa-solid {
+        display: flex;
+    }
+
+    .info-bulle {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .barre-filtre {
+        
+    }
+
+    .bfbutton {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .hebergements-hcards {
+        flex-direction: column;
+    }
+
+    .hebergements-hcards a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .activites-acards {
+        flex-direction: column-reverse;
+        height: 100%;
+        align-items: center;
+     
+    }
+
+    .activites-acards a {
+        width: 90%;
+        height: 30%;
+    }
+
+    .acard {
+        width: 100%;
+        height: 100%;
+    }
+
+    .acard img {
+        
+        width: 100%;
+        height: 200px;
+    }
+
+    
+
+    
+
+    
+
+    .acard-title {
+        
+        /* display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;*/
+        /* width: 100%; 
+        padding-left: 20%; */
+    }
+
+    .site-foot {
+        flex-direction: column;
+    }
 }
