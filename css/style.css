@@ -15,12 +15,23 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 main {
+    max-width: 1340px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+footer {
+    /* width: 100%;
+    max-width: 1340px; */
+    margin-left: 50px;
+    margin-right: 50px;   
 }
 
 .main-container {
@@ -202,7 +213,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     /* gap: 40px; */
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .bfbutton {
@@ -239,7 +250,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    margin-top: 37.5px;
+    margin-top: 10px;
 }
 
 .info-bulle {
@@ -320,7 +331,7 @@ main {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 /****** Hebergements ***********/
@@ -444,6 +455,7 @@ main {
 
 .activites {
     padding: 30px;
+    padding-top: 0;
 }
 
 .activites h2 {
@@ -595,7 +607,7 @@ main {
     }
 
     .populaires-title {
-        margin-bottom: 20px;hhhhhhhhhhh
+        margin-bottom: 20px;
     }
 
     .populaires-cards {
@@ -692,6 +704,10 @@ main {
         justify-content: center;
         align-items: center;
         gap: 0px;
+    }
+
+    nav {
+        width: 100%;
     }
 
     .main-header-hypertext {
@@ -854,7 +870,10 @@ main {
 
     
 
-    
+    footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .acard-title {
         display: flex;
@@ -871,5 +890,6 @@ main {
         gap: 20px;
         padding-bottom: 25px;
         padding-top: 15px;
+        width: auto;
     }
 }
