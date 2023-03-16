@@ -224,8 +224,8 @@ footer {
     height: 50px;
     border: solid #D9D9D9;
     border-radius: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 19px;
 }
 
 .bfbutton i {
@@ -352,6 +352,7 @@ footer {
     display: flex;
     flex-direction: column;
     /* margin-bottom: 33px; */
+    width: 100%;
 }
 
 .hebergements-hcards img {
@@ -361,10 +362,18 @@ footer {
     border-top-right-radius: 20px;
 }
 
+.hebergement-ligne {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
 .hebergements-hcards a {
     text-decoration: none;
     color: black;
-    width: 30%;
+    /* width: 30%; */
+    height: 100%;
 }
 
 .hebergements-hcards .hcard-title {
@@ -565,7 +574,8 @@ footer {
 
     .bfbutton {
         margin-left: 0px;
-        margin-right: 10px;
+        margin-right: 8px;
+        padding-right: 19px;
     }
 
     .bfbutton a {
@@ -585,10 +595,10 @@ footer {
         width: 100%;
     }
 
-    .hebergements-hcards a {
+    /* .hebergements-hcards a {
         width: 30%;
         height: 30%;
-    }
+    } */
 
     .hcard {
         height: 100%;
@@ -823,6 +833,10 @@ footer {
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
+    }
+
+    .hebergement-ligne {
+        flex-direction: column;
     }
 
     .hebergements-hcards {
